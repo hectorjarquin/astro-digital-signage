@@ -136,12 +136,10 @@
 			</div><!-- first -->
 		</div><!-- left -->
 		<div class="secondary col-md-4" data-wp-source="https://public-api.wordpress.com/rest/v1.1/sites/getcontentfrom.wordpress.com/">
-			<div class="second">
-					<ul class="bxslider" data-wp-element="posts" data-wp-options="category=logos&number=25" data-wp-layout="list">
-						<li>
-							<div style="margin-top:25%;" data-wp-template="content"></div>
-						</li>
-					</ul>
+			<div class="second">					
+				<div data-wp-element="posts/51">
+					<div data-wp-template="content" style="padding:25% 5% 0; text-align:center;"></div>
+				</div>
 			</div><!-- second -->
 		</div><!-- secondary -->
 		<div class="fourth lead col-md-12" data-wp-source="https://public-api.wordpress.com/rest/v1.1/sites/dailypost.wordpress.com/">
@@ -151,8 +149,8 @@
 						</li>
 					</ul>
 		</div><!-- fourth -->
-		<div class="fifth lead col-md-12" data-wp-source="https://public-api.wordpress.com/rest/v1.1/sites/ma.tt/">
-					<ul class="bxslider" data-wp-element="posts" data-wp-options="number=10" data-wp-layout="list">
+		<div class="fifth lead col-md-12" data-wp-source="https://public-api.wordpress.com/rest/v1.1/sites/jetpack.me/">
+					<ul class="bxslider" data-wp-element="posts" data-wp-options="category=features&number=10" data-wp-layout="list">
 						<li><h1 data-wp-template="title"></span></h1>
 					</ul>
 		</div><!-- fourth -->
@@ -209,7 +207,7 @@
 		$('.fifth .bx-viewport, .fifth .bxslider li, .fifth .bxslider p').height(function(){ return $('.fifth').height() * 1; });
 	
 		// image style
-		$('.second img').css('margin','auto');
+		$('.second img').css('margin','auto').removeClass('img-responsive');
 
 		// bxslider
 		$('.first .bxslider').bxSlider({
